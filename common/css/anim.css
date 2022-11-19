@@ -1,0 +1,206 @@
+#loader.loaded {
+    animation: fadeOut 1s forwards;
+}
+
+.main-text-ani {
+    animation: slid 1s ease-out 2s 1 normal forwards;
+}
+
+.main-text-ani-nd {
+    animation: slid 1s ease-out 2s 1 normal forwards;
+}
+
+.main-border {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    animation: border-ani 1s ease-out 1s 1 normal forwards;
+}
+
+@-webkit-keyframes border-ani {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes border-ani {
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes slid {
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slid {
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+/* FadeAnimation */
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fadeRight {
+    animation-name: fadeRightAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fadeLeft {
+    animation-name: fadeLeftAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRightAnime {
+    from {
+        opacity: 0;
+        transform: translate(300px, 50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeLeftAnime {
+    from {
+        opacity: 0;
+        transform: translate(-300px, 50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .hambtn.show i:nth-child(1) {
+        -webkit-transform: translateY(6px) rotate(-405deg);
+            -ms-transform: translateY(6px) rotate(-405deg);
+                transform: translateY(6px) rotate(-405deg);
+    }
+
+    .hambtn.show i:nth-child(2) {
+        -webkit-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+                transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    .hambtn.show i:nth-child(3) {
+        -webkit-transform: translateY(-11px) rotate(405deg);
+            -ms-transform: translateY(-11px) rotate(405deg);
+                transform: translateY(-11px) rotate(405deg);
+    }
+
+    .hambtn.show::after {
+        content: 'close';
+    }
+
+    .menu.show {
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    .menu.show li:nth-child(1) {
+        -webkit-animation: slid 1s ease-in-out 0s 1 normal forwards;
+                animation: slid 1s ease-in-out 0s 1 normal forwards;
+    }
+
+    .menu.show li:nth-child(2) {
+        -webkit-animation: slid 1s ease-in-out 0.1s 1 normal forwards;
+                animation: slid 1s ease-in-out 0.1s 1 normal forwards;
+    }
+
+    .menu.show li:nth-child(3) {
+        -webkit-animation: slid 1s ease-in-out 0.2s 1 normal forwards;
+                animation: slid 1s ease-in-out 0.2s 1 normal forwards;
+    }
+
+    .menu.show li:nth-child(4) {
+        -webkit-animation: slid 1s ease-in-out 0.3s 1 normal forwards;
+                animation: slid 1s ease-in-out 0.3s 1 normal forwards;
+    }
+    .menu-sns.show {
+        -webkit-animation: fadeIn 1s ease-in-out 1s 1 normal forwards;
+                animation: fadeIn 1s ease-in-out 1s 1 normal forwards;
+    }
+
+    .menu-back.show {
+        visibility: visible;
+    }
+
+    .menu-contact.show {
+        -webkit-animation: slid 1s ease-in-out 0.5s 1 normal forwards;
+                animation: slid 1s ease-in-out 0.5s 1 normal forwards;
+    }
+}

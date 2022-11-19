@@ -1,0 +1,175 @@
+@media screen and (min-width: 1080px) {
+    /* -----slidshow----- */
+    .slidshow {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+        z-index: 1;
+    }
+    
+    .slider-item01 {
+        background: url(../../common/img/slider01.jpg);
+    }
+
+    .slider-item02 {
+        background: url(../../common/img/slider02.jpg);
+    }
+
+    .slider-item03 {
+        background: url(../../common/img/slider03.jpg);
+    }
+
+    .slider-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: calc(100vh - 80px);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        z-index: 3;
+        width: 40px;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .slick-dots li {
+        margin:20px 10px;
+    }
+    
+    .slick-dots button {
+        color: transparent;
+        outline: none;
+        width:15px;
+        height:15px;
+        display:block;
+        border-radius:50%;
+        margin-top: 20px;
+        border: none;
+        background: #fff;
+    }
+    
+    .slick-dots .slick-active button{
+        background: var(--wPattern2);
+    }
+    
+    /* -----introduce----- */
+    #intro {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .intro-title {
+        text-align: left;
+        margin-left: 60px;
+        padding-top: 50px;
+    }
+
+    .intro-title h1 {
+        padding-left: 10px;
+    }
+
+    /* -----what is boy-scout?----- */
+    .wh-boy {
+        margin: 0 auto;
+        width: 90%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .wh-boy-title {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        position: relative;
+        margin-top: 20px;
+        margin-left: 60px;
+        padding-bottom: 10px;
+    }
+
+    .wh-boy-title h3 {
+        padding-left: 10px;
+        font-size: 1.3rem;
+        color: #f582ae;
+    }
+
+    .wh-boy-exp {
+        width: 70%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .wh-boy-exp p {
+        display: block;
+        padding: 30px;
+        line-height: 30px;
+        letter-spacing: 5px;
+        color: #172c66;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .slidshow {
+        display: none;
+    }
+
+    /* -----introduce----- */
+    #intro {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .intro-title {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 80px;
+        padding-top: 50px;
+    }
+
+    /* -----what is boy-scout?----- */
+    .wh-boy {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .wh-boy-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .wh-boy-title h3 {
+        color: var(--wPattern4);
+    }
+
+    .wh-boy-exp {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .wh-boy-exp p {
+        display: block;
+        padding: 20px 5px;
+        line-height: 30px;
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+}
